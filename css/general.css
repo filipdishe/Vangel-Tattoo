@@ -1,0 +1,197 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+font-family: 'DM Sans', sans-serif;
+
+--- 02 COLOR SYSTEM
+
+Background color: #f6f6f6;
+
+Headline color: 
+
+Text color: 
+
+Main color: #97663c;
+
+Grey colors: 
+
+Tint: #795230 (Darker versions)
+Shades:
+
+--- 03 BORDER RADIUS
+10px
+
+
+--- 03 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "DM Sans", sans-serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  color: #555555;
+  background-color: #f6f6f6;
+  overflow-x: hidden;
+}
+
+/* ////////////////////
+  GENERAL REUSABLE COMPONENTS
+  /////////// */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 15rem;
+  height: 21rem;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: #f3e7e7;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: #333;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #333;
+}
+
+.subheading {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #97663c;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #f3e7e7;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  background-color: #97663c;
+  border-radius: 10px;
+  margin-right: 1.2rem;
+
+  transition: all 0.3s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #795230;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 6.8rem;
+}
+
+.since-year {
+  color: #97663c;
+}
+
+.section-description {
+  text-align: center;
+}
+
+/* For spanning the grid in the gallery section */
+/* w stands for width 
+   h stands for height */
+
+.w-2 {
+  grid-column: span 2;
+}
+.w-3 {
+  grid-column: span 3;
+}
+.w-4 {
+  grid-column: span 4;
+}
+.w-5 {
+  grid-column: span 5;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+.h-3 {
+  grid-row: span 3;
+}
+.h-4 {
+  grid-row: span 4;
+}
+.h-5 {
+  grid-row: span 5;
+}
+
+/* FIXING FLEXBOX GAP IN SAFARI */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.no-flexbox-gap .location-info:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .contact-footer:not(:last-child) {
+  margin-bottom: 1.2rem;
+}

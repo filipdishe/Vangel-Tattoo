@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vangel Tattoo is a professional tattoo studio located in Bitola"
+    />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <title>Vangel Tattoo &mdash; Turn your imagination into a tattoo!</title>
+  </head>
+  <body>
+    <main>
+      <section
+        class="section-hero"
+        id="hero"
+        role="img"
+        aria-label="Background image to the hero section, man with tattoo on his arm"
+      >
+        <div class="navbar">
+          <a href="#"
+            ><img class="logo" src="img/logo.png" alt="Vangel Tattoo Logo" />
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link" href="#types">Types</a></li>
+              <li><a class="main-nav-link" href="#gallery">Our Work</a></li>
+              <li><a class="main-nav-link" href="#cta">Contact</a></li>
+              <!-- <li><a class="main-nav-link" href="#">Section 4</a></li> -->
+            </ul>
+          </nav>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="hero-container">
+          <div>
+            <h1 class="heading-primary margin-bottom-sm">
+              Where your imagination becomes a tattoo
+            </h1>
+            <p class="summary margin-bottom-lg">
+              Professional tattoo studio with 5000 tattoos created over the
+              decade
+            </p>
+            <a class="btn-full" href="#cta"><span>Contact Us</span></a>
+            <a class="hero-btn" href="#types">Learn more &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-types" id="types">
+        <div class="container margin-bottom-lg">
+          <span class="subheading margin-bottom-sm">
+            Since <span class="since-year">1993</span>
+          </span>
+          <h2 class="heading-secondary margin-bottom-lg">
+            We create tattoos of all types
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="grid grid--2-cols">
+            <!-- Text box -->
+            <div class="types-text-box">
+              <p class="types-number">01</p>
+              <h3 class="heading-tertiary margin-bottom-md">Realism</h3>
+              <p class="type-description">
+                Uses special techniques to make tattoos realistic. Shading and
+                contrast are prioritized. It is possible to fade in 8-10 years
+                but with a little touch up it will be perfect again
+              </p>
+            </div>
+
+            <!-- Img box -->
+            <div class="types-img-box">
+              <img
+                class="types-img"
+                src="img/types/realism.jpg"
+                alt="Example of realism tattoo style"
+              />
+            </div>
+
+            <!-- Img box -->
+            <div class="types-img-box">
+              <img
+                class="types-img thrash-polka"
+                src="img/types/thrashpolka.jpeg"
+                alt="Example of thrash-polka tattoo style"
+              />
+            </div>
+            <!-- Text box -->
+            <div class="types-text-box">
+              <p class="types-number">02</p>
+              <h3 class="heading-tertiary margin-bottom-md">Thrash Polka</h3>
+              <p class="type-description">
+                Thrash Polka was invented in Germany. They usually tell a story
+                and the design are chaotic. The designs are most often abstract
+                with elements of realism. They are confusing but very beautiful
+              </p>
+            </div>
+
+            <!-- Text box -->
+            <div class="types-text-box">
+              <p class="types-number">03</p>
+              <h3 class="heading-tertiary margin-bottom-md">
+                Japanese aka Irezumi
+              </h3>
+              <p class="type-description">
+                Very traditional style of tattooing using large scale motifs
+                based on Japanese mythology and religious icons. It has a very
+                rich history behind it. Back in the days they were synonymous to
+                criminals and yakuza, but today is one of the most popular
+                styles out there
+              </p>
+            </div>
+
+            <!-- Img box -->
+            <div class="types-img-box">
+              <img
+                class="types-img"
+                src="img/types/japanese.jpg"
+                alt="Example of japanese tattoo style"
+              />
+            </div>
+
+            <!-- Img box -->
+            <div class="types-img-box">
+              <img
+                class="types-img traditional-american"
+                src="img/types/american1.jpg"
+                alt="Example of traditional american tattoo style"
+              />
+            </div>
+
+            <!-- Text box -->
+            <div class="types-text-box">
+              <p class="types-number">04</p>
+              <h3 class="heading-tertiary margin-bottom-md">
+                Traditional American Tattoos
+              </h3>
+              <p class="type-description">
+                They have bold lines and bright solid colors it should be a good
+                size and easy to understand with minimal shading, focusing on
+                black as a main color and other help colors
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parallex"></section>
+
+      <section class="our-work" id="gallery">
+        <div class="section-description margin-bottom-lg">
+          <span class="subheading margin-bottom-sm since-year">Our work</span>
+          <h2 class="heading-secondary">Some of the tattoos we made</h2>
+        </div>
+        <div class="gallery">
+          <div class="image-item-1 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-1.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-2.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-3 w-2 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-3.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-4">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-4.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-5 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-5.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-6 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-6.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-7">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-7.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-8">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-8.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-9 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-9.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-10">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-10.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-11">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-11.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-12 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-12.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-13 h-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-13.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+          <div class="image-item-14 w-2">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-14.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+
+          <div class="image-item-15">
+            <img
+              class="gallery-img"
+              src="img/gallery/glr-15.jpeg"
+              alt="picture of tattoo that we made"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-cta"
+        id="cta"
+        role="img"
+        aria-label="Background image in the Contact section with flowers."
+      >
+        <div class="container card-flex">
+          <div class="card-box">
+            <h2 class="heading-secondary margin-bottom-md">
+              Choose your next <span class="since-year">tattoo</span>
+            </h2>
+            <p
+              class="card-discription margin-bottom-lg"
+              style="text-align: center"
+            >
+              We will be glad if we are the ones who will turn<br />
+              your imagination into a tattoo
+            </p>
+            <div class="location-info margin-bottom-lg">
+              <p>Location: <span>Bitola, Macedonia</span></p>
+              <p>
+                Phone:
+                <a class="link-number-cta" href="tel:075 207 878"
+                  >+389 75 207 878</a
+                >
+              </p>
+              <p>
+                Instagram:
+                <a
+                  target="_blank"
+                  href="#https://www.instagram.com/vangeltattoo/"
+                  class="instagram-cta"
+                  >vangeltattoo</a
+                >
+              </p>
+            </div>
+            <!-- <a class="btn-full" href="tel:075 207 878"
+              >Call Us <ion-icon name="call"></ion-icon
+            ></a> -->
+          </div>
+        </div>
+      </section>
+      <section class="section-footer">
+        <div class="container footer-grid">
+          <div class="contact-footer">
+            <h3 class="footer-heading margin-bottom-sm">Contant Us</h3>
+            <div class="social-icons-flex">
+              <a
+                class="footer-icon"
+                target="_blank"
+                href="https://www.instagram.com/vangeltattoo/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+              <a
+                class="footer-icon"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100057597192166"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </div>
+            <a class="footer-number" href="tel:075 207 878">389 75 207 878</a>
+            <p class="footer-address">Adress: Bitola, Macedonia</p>
+          </div>
+
+          <div class="logo-footer">
+            <a class="logo-link" href="#"
+              ><img
+                class="logo-img"
+                src="img/logo-black.png"
+                alt="Vangel Tattoo Logo"
+            /></a>
+          </div>
+
+          <div class="page-footer">
+            <h3 class="footer-heading margin-bottom-sm">Studio</h3>
+            <div class="footer-nav-box">
+              <a class="footer-nav" href="#hero">About Vangel Tattoo</a>
+              <a class="footer-nav" href="#types">Types of tattoos</a>
+              <a class="footer-nav" href="#gallery">Our Work</a>
+              <a class="footer-nav" href="#cta">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
